@@ -6,6 +6,12 @@
     <title>Héritage GO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Héritage GO is the community for heritage lovers.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/main.css">
+
     <!-- Favicons for various platforms -->
 
     <!-- The classic favicon, displayed in the tabs. -->
@@ -43,7 +49,7 @@
 
     <!-- for non-retina iPhone with iOS7. -->
     <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
-    
+
     <!-- iPhone and iPad users can turn web pages into icons on their home screen. 
         Such link appears as a regular iOS native application. When this happens, 
         the device looks for a specific picture. 
@@ -52,6 +58,44 @@
 
 </head>
 <body>
+    <header class='nav nav--border'>
+        <div class="nav__left"></div>
+        <div class="nav__center">
+            <!-- the Héritage GO's logo -->
+            <div class="nav__center__logo">
+                    <img src="./static/heritagego_logo_128x73.png" alt="HéritageGo-logo" width="100px" height="auto">
+            </div>
+            <div class="nav__center__areaName">
+                <div class="nav__center__areaName__text">
+                    <!-- Name of the detected area where the user is currently located in,decomposed in two lines, 
+                        where the top line refers to the primary area, basically the city (e.g., Sa Đéc), 
+                        and the bottom line refers to a secondary larger area (e.g., Đồng Tháp, Việt Nam). -->
+                    <h1 class="nav__center__areaName__text__primaryArea">Hồ Chí Minh</h1>
+                    <h2 class="nav__center__areaName__text__secondaryArea">Việt Nam</h2>
+                </div>
+                    <!-- a compass icon that allows the user to request the Web application to geolocate him more accurately; -->
+                <div class="nav__center__areaName__compassIcon">
+                    <i class="nav__center__areaName__compassIcon--spin far fa-compass"></i>
+                </div> 
+            </div>       
+        </div>
+        <div class="nav__right">
+            <!-- a button that allows the user to log-in. -->
+            <button class="nav__right__loginButton">Log In</button>
+        </div>
+    </header>
+    <section>
 
+    </section>
+    <footer>
+
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous">
+    </script>
+    <script src="js/heritagego-service.1.0.0.js"></script>
+</script>
 </body>
 </html>
