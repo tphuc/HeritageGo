@@ -69,7 +69,7 @@
                         </div>
                         <div class="floating-label">
                             <input class="floating-input" type="password" placeholder=" " id="inputPassword">
-                            <span toggle="#inputPassword" class="fas fa-lock btn-password toggle-password"></span>
+                            <span toggle="#inputPassword" class="fas fa-lock btn-password toggle-password" id="lock-icon" ></span>
                             <label>Password</label>
                         </div>
                     </div>
@@ -81,6 +81,65 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <div class="main_left"></div>
+
+        <div class="main_mid">
+            <div class="post">
+                <div class="post__header">
+                  <div class="post__avatar"></div>
+                  <div class="post__detail">
+                    <div class="post__top">
+                      <div class="post__title">
+                        Saigon Notre-Dame Cathedral
+                      </div>
+                      <img src="./img/translate_icon.png" id="translate-icon">
+                    </div>
+        
+                    <div class="post__siteinfo">
+                      <div class="post__siteposition">
+                        <i class="fas fa-map-marker-alt"></i>Sài Gòn, Việt Nam
+                      </div>
+                      <div class="post__sitetime">
+                        <i class="far fa-clock">1991</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <img src="./img/LVD.png" alt="postImage" class="post__image">
+        
+                <div class="post__reaction">
+                  <div class="reaction__left">
+                    <div class="reaction__love">
+                      <i class="fas fa-heart"></i>
+                      0
+                    </div>
+                    <div class="reaction__comment">
+                      <i class="fas fa-comment"></i>
+                      0
+                    </div>
+                    <div class="reaction__camera">
+                      <i class="fas fa-camera"></i>
+                      0
+                    </div>
+                  </div>
+                  <div class="reaction__right">
+                    <div class="reaction__bookmark">
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__comment">
+                  <input type="text" name="comment" placeholder="Write a comment" class="commentBox">
+                  <span class="fas fa-paper-plane"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_right"></div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"

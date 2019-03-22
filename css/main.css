@@ -153,3 +153,68 @@ label {
     color: #1e90ff;
 }
 
+#lock-icon {
+    float: right;
+    margin-top: -25px;
+}
+/* end floating table */
+
+/* Post */
+.main {
+    display: flex;
+}
+
+.main__left {
+    margin: auto;
+}
+
+.main__mid {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.main__right {
+    margin: auto;
+}
+
+.post__header {
+    display: flex;
+    align-items: center;
+}
+
+#translate-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    animation-name: shake;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(30deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(-30deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
