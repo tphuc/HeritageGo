@@ -1,1 +1,1 @@
-# HeritageGo
+# Heritage-GO

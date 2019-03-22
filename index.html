@@ -1,101 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Héritage GO</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Héritage GO is the community for heritage lovers.">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-    <!-- CSS Files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Héritage GO</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Favicons for various platforms -->
-
-    <!-- The classic favicon, displayed in the tabs. -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-
-    <!-- For Android Chrome M39+ with 4.0 screen density. -->
-    <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png"> 
-
-    <!-- For Android Chrome M39+ with 2.0 screen density. -->
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
-
-    <!-- For Safari on Mac OS. -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-
-    <!-- for iPhone 6 Plus with iOS8. -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
-
-    <!-- for retina iPad with iOS7. -->
-    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
-
-    <!-- for retina iPad with iOS6 or prior. -->
-    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
-
-    <!-- for retina iPhone with iOS7. -->
-    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
-
-    <!-- for retina iPhone with iOS6 or prior. -->
-    <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
-
-    <!-- for non-retina iPad with iOS7. -->
-    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
-
-    <!--  for non-retina iPad with iOS6 or prior. -->
-    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
-
-    <!-- for non-retina iPhone with iOS7. -->
-    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
-
-    <!-- iPhone and iPad users can turn web pages into icons on their home screen. 
-        Such link appears as a regular iOS native application. When this happens, 
-        the device looks for a specific picture. 
-        The 57x57 resolution is convenient for non-retina iPhone with iOS6 or prior -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
-
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    
 </head>
 <body>
-    <header class='nav nav--border'>
-        <div class="nav__left"></div>
-        <div class="nav__center">
-            <!-- the Héritage GO's logo -->
-            <div class="nav__center__logo">
-                    <img src="./static/heritagego_logo_128x73.png" alt="HéritageGo-logo" width="100px" height="auto">
+    <header class="header">
+        <div class="header__left"></div>
+
+        <div class="header__mid">
+            <div class="header__logo">
+                <img src="./img/heritagego_logo_128x73.png" width="100px" height="auto">
             </div>
-            <div class="nav__center__areaName">
-                <div class="nav__center__areaName__text">
-                    <!-- Name of the detected area where the user is currently located in,decomposed in two lines, 
-                        where the top line refers to the primary area, basically the city (e.g., Sa Đéc), 
-                        and the bottom line refers to a secondary larger area (e.g., Đồng Tháp, Việt Nam). -->
-                    <h1 class="nav__center__areaName__text__primaryArea">Hồ Chí Minh</h1>
-                    <h2 class="nav__center__areaName__text__secondaryArea">Việt Nam</h2>
+
+            <div class="header__area">
+                <div class="header__text">
+                    <h1 class="header__primeText">Hồ Chí Minh</h1>
+                    <h2 class="header__secText">Việt Nam</h2>
                 </div>
-                    <!-- a compass icon that allows the user to request the Web application to geolocate him more accurately; -->
-                <div class="nav__center__areaName__compassIcon">
-                    <i class="nav__center__areaName__compassIcon--spin far fa-compass"></i>
-                </div> 
-            </div>       
+                <div class="header__compass">
+                    <i class="spin far fa-compass"></i>
+                </div>
+            </div>
         </div>
-        <div class="nav__right">
-            <!-- a button that allows the user to log-in. -->
-            <button class="nav__right__loginButton">Log In</button>
+
+        <!-- Button trigger modal -->
+        <div class="header__right">
+            <button type="button" class="header__loginButton" data-toggle="modal" data-target="#loginModal">Log In</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="floating-label">
+                            <input class="floating-input" type="email"
+                                    placeholder=" ">
+                            <label>Email address</label>
+                        </div>
+                        <div class="floating-label">
+                            <input class="floating-input" type="password" placeholder=" " id="inputPassword">
+                            <span toggle="#inputPassword" class="fas fa-lock btn-password toggle-password"></span>
+                            <label>Password</label>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary col-12">Log in</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <section>
 
-    </section>
-    <footer>
-
-    </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
-    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous">
     </script>
     <script src="js/heritagego-service.1.0.0.js"></script>
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(".toggle-password").click(function () {
+            $(this).toggleClass("fa-unlock fa-unlock-alt");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") === "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+
 </body>
+
 </html>
