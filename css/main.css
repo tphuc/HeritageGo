@@ -160,31 +160,19 @@ label {
 /* end floating table */
 
 /* Post */
-.main {
-    display: flex;
-}
-
-.main__left {
-    margin: auto;
-}
-
 .main__mid {
     display: flex;
     width: 600px;
     flex-direction: column;
     margin-right: 80px;
 }
-
-.main__right {
-    margin: auto;
-}
-
 .post__header {
     display: flex;
     align-items: center;
 }
 
 #translate-icon {
+    float: right;
     width: 24px;
     height: 24px;
     margin-right: 20px;
@@ -192,9 +180,9 @@ label {
     animation-duration: 1000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  }
+}
 
-  @keyframes shake {
+@keyframes shake {
     0% {
       transform: rotate(0deg);
     }
@@ -214,7 +202,36 @@ label {
     100% {
       transform: rotate(0deg);
     }
-  }
+}
+.post__avatar {
+    width: 50px;
+}
+
+.post__image {
+    width: 600px;
+    height: auto;
+}
+
+.post__comment {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#comment {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    height: 40px;
+    padding: 5px 5px 5px 20px;
+    outline: none;
+}
+#plane-icon {
+    float: right;
+    margin-left: -40px;
+    margin-top: 20px;
+    color: gray;
+}
 
 
 
