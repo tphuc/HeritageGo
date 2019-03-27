@@ -1,6 +1,4 @@
 mHeritageGoService.getPhotos().then(function (value) {
-    const img_base_url = "https://cdn.heobs.org/photo/";
-
     for (let i = 0; i < value.length; i++) {
         mHeritageGoService.getPhoto(value[i]).then(function (value) {
             //-------------form of the post @@ ------------------------
@@ -52,15 +50,11 @@ mHeritageGoService.getPhotos().then(function (value) {
                     - creation_time/update_time
                     - image_url
             */
-
             var container = document.getElementsByClassName("main_mid mx-auto")[0].append(div);
 
         })
-        
-
     }
 
 }).catch(function (value) {
-
     console.log("Promise Rejected");
 });
