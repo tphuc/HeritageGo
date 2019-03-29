@@ -30,7 +30,6 @@ function scrollListen() {
 
 function showPosts() {
   addPosts(5);
-  scrollListen();
 }
 
 
@@ -61,7 +60,8 @@ function addPosts(n) {
           })
           .catch(error => { console.log(error); });
       })
-      scrollListen();
+      
     })
-    .catch($error => { console.log($error); });
+    .catch($error => { console.log($error); }).then(()=> {scrollListen(); console.log("Loaded")});
 }
+
