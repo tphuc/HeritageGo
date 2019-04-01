@@ -313,4 +313,8 @@ body {
 
 #content:first{
     filter: blur(8px);
-}   
+}
+
+.dropdown-menu {
+    min-width: 0px !important;
+}
